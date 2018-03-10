@@ -1,0 +1,23 @@
+{
+    "name": "ipaulk/rlp",
+    "type": "library",
+    "description": "Recursive Length Prefix Encoding and Decoding implementation.",
+    "keywords": ["php", "RLP", "Ethereum"],
+    "homepage": "https://github.com/iPaulK/rlp/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul K",
+            "email": "ipaulk@gmail.com",
+            "homepage": "https://github.com/iPaulK/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "IPaulK\\RLP\\": "src/"
+        }
+    }
+}
