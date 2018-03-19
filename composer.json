@@ -15,9 +15,17 @@
     "require": {
         "php": ">=5.5"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
     "autoload": {
         "psr-4": {
             "IPaulK\\RLP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
         }
     }
 }
