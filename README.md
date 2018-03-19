@@ -32,12 +32,19 @@ $encodedHex = Utils::toHEX($encoded);
 Examples:
 
 The string "dog" = [ 0x83, 0x64, 0x6f, 0x67 ]
+
 The list [ "cat", "dog" ] = [ 0xc8, 0x83, 0x63, 0x61, 0x74, 0x83, 0x64, 0x6f, 0x67 ]
+
 The empty string ('null') = [ 0x80 ]
+
 The empty list = [ 0xc0 ]
+
 The integer 0 = [ 0x80 ]
+
 The encoded integer 0 ('\x00') = [ 0x00 ]
+
 The encoded integer 15 ('\x0f') = [ 0x0f ]
+
 The encoded integer 1024 ('\x04\x00') = [ 0x82, 0x04, 0x00 ]
 
 
@@ -50,7 +57,9 @@ not implemented, maybe in the future
 ## Unit Testing
 
 Unit testing for RLP is done using [PHPUnit](https://phpunit.de/).
+
 To get started, run `composer install` from the command line while in the RLP root directory.
+
 To execute tests, run `vendor/bin/phpunit` from the command line while in the RLP root directory.
 
 ## Todos
@@ -58,6 +67,5 @@ To execute tests, run `vendor/bin/phpunit` from the command line while in the RL
  - Add Decoder
 
 ## License
-----
 
 MIT
