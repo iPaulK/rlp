@@ -24,7 +24,7 @@ class EncoderTest extends TestCase
     /**
      * Test encode a string "dog" = [ 0x83, 'd', 'o', 'g' ]
      * ascii: "dog" = [ 131, 100, 111, 103 ]
-     * hex: "dog" = [ 0xc8, 0x83, 0x63, 0x61, 0x74, 0x83, 0x64, 0x6f, 0x67 ]
+     * hex: "dog" = [ 0xc8, 0x64, 0x6f, 0x67 ]
      * 
      * @return void
      */
@@ -81,7 +81,7 @@ class EncoderTest extends TestCase
         $this->assertEquals(1, count($output));
     }
     /**
-     * The encoded integer 0 ('\x00') = [ 0x00 ]
+     * Test encode a integer 0 ('\x00') = [ 0x00 ]
      *
      * @return void
      */
@@ -92,7 +92,7 @@ class EncoderTest extends TestCase
         $this->assertEquals(1, count($output));
     }
     /**
-     * The encoded integer 15 ('\x0f') = [ 0x0f ]
+     * Test encode a integer 15 ('\x0f') = [ 0x0f ]
      *
      * @return void
      */
@@ -103,7 +103,7 @@ class EncoderTest extends TestCase
         $this->assertEquals(1, count($output));
     }
     /**
-     * The encoded integer 15 ('\x04\x00') = [ 0x82, 0x04, 0x00 ]
+     * Test encode a integer 1024 ('\x04\x00') = [ 0x82, 0x04, 0x00 ]
      *
      * @return void
      */
