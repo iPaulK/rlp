@@ -58,8 +58,6 @@ not implemented, maybe in the future
 
 Unit testing for RLP is done using [PHPUnit](https://phpunit.de/).
 
-To get started, run `composer install` from the command line while in the RLP root directory.
-
 To execute tests, run `vendor/bin/phpunit` from the command line while in the RLP root directory.
 
 ## Todos
@@ -68,4 +66,4 @@ To execute tests, run `vendor/bin/phpunit` from the command line while in the RL
 
 ## License
 
-MIT
+[MIT](https://github.com/iPaulK/rlp/blob/master/LICENSE).
